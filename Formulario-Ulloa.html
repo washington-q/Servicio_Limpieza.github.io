@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lan="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Autor" content="Steven Ulloa Espinoza">
+    <title>Formulario</title>
+    <Style>
+        .formularios {
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            padding: 10px;
+            background: whitesmoke;
+            width: 80%;
+            margin: 0 auto;
+            /*para centrar*/
+        }
+
+        .formularios div {
+            padding: 5px;
+        }
+
+        .formularios div:nth-child(2n) {
+            background: #e7ebf0;
+        }
+
+        .mensajeError {
+            color: red;
+            font-size: 9px;
+        }
+    </Style>
+
+    <link rel="stylesheet" href="css/EstilosForm-Ulloa.css">
+
+</head>
+
+<body>
+    <div class="contaniner">
+        <nav class="nav-main">
+            <a title="House Cleanning" href="Principal-Ulloa.html"><img src="img/logo.jpg" alt="Limpieza Logo"
+                    class="nav-brand" /></a>
+            <!--<img src="img/house_cleaning.png" alt="Limpieza Logo" class="nav-brand">-->
+            <!--<ul class="nav-menu">
+                    <li>
+                        <a href="Principal-Ulloa.html">Volver</a>
+                    </li>
+                </ul>-->
+        </nav>
+        <hr>
+    </div>
+
+    <div id="contenedorPrincipal">
+        <div id="encabezado">
+            <header>
+                <h1>Dejanos tu comentario acerca de nuestros servicios</h1>
+            </header>
+        </div>
+        <div id="contenedorContenido">
+            <h4 class="text-center"
+                style="color:rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">Tu comentario
+                nos ayuda a mejorar la calidad de nuestros servicios</h4>
+            <hr>
+
+            <div class="formularios">
+               
+                <form id="formContacto" onsubmit="return validar();">
+
+                    <div>
+                        <label>Nombres:</label>
+                        <input type="text" name="nombres" id="nombres" class="formItem"
+                            placeholder="Ingrese sus nombre" />
+                    </div>
+                    <div>
+                        <label>Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" class="formItem"
+                            placeholder="Ingrese sus apellidos" />
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input type="text" name="correo" id="correo" class="formItem"
+                            placeholder="Ingrese sus correo" />
+                    </div>
+
+                    <div>
+                        <label>Genero:</label>
+                        <input class="gen" id="fem" type="radio" name="genero" id="g1" value="F" />Femenino
+                        <input class="gen" id="mas" type="radio" name="genero" id="g2" value="M" />Masculino
+                    </div>
+                    <div>
+                        <label>Estado Civil:</label>
+                        <select name="estadoC" id="estadoC" class="formItem">
+                            <option value="0">Seleccione..</option>
+                            <option value="1">Soltero</option>
+                            <option value="2">casado</option>
+                            <option value="3">Viudo</option>
+                            <option value="4">Otro</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <label>Que servicio de pulido usted contrataria o recomendaria a sus amigos o
+                            conocidos?:</label> </br>
+                        Pulido de cer&aacute;mico <input type="checkbox" name="suscripcion1" value="1" id="suscripcion1"
+                            class="formItem sus principal" />
+                        Pulido de marmol <input type="checkbox" name="suscripcion2" value="2" id="suscripcion2"
+                            class="formItem sus secundario" />
+                        Pulido de granito <input type="checkbox" name="suscripcion3" value="3" id="suscripcion3"
+                            class="formItem sus" />
+                        Pulido de porcelanato <input type="checkbox" name="suscripcion4" value="4" id="suscripcion4"
+                            class="formItem sus " />
+
+                    </div>
+                    <div>
+                        <label>Fecha de Nacimiento:</label>
+                        <input type="date" name="fecha" id="fecha" class="formItem" />
+                    </div>
+
+                    <div>
+                        <label>Comentarios</label> <br>
+                        <textarea class="form-control" id="texto" rows="4" cols="100" class="formItem"
+                            placeholder="Escribe tu comentario"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" class="btn btn-primary" value="Enviar" name="enviar">
+                        <input type="reset" class="btn btn-primary" value="Cancelar" name="cancelar">
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <div id="pie" class="text-center">
+            <footer
+                style="font-size: 14pt; font-family: Arial, Helvetica, sans-serif; font-weight: bold; padding: 15px;">
+                Los datos ingresados en este formulario ser&aacute;n usados con el &uacute;nico prop&oacute;sito de
+                mejorar como empresa. Muchas gracias!</footer>
+        </div>
+    </div>
+    <!--PARA ENLAZAR EL DOCUMENTO JS EXTERNO-->
+    <script type="text/javascript" src="js/Validaciones-Ulloa.js">
+    </script>
+
+</body>
+
+</html>

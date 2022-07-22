@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Style-Registro Rosado.css">
+    <title>House Cleaning Limpieza de oficinas</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="/img/logo.jpeg" alt="Logo">
+        </div>
+        
+        <nav class="header-navbar">
+            <ul>
+                <li><a href="/Quimi_Oficina.html">Servicios para Oficina</a></li>
+                <li><a href="/PibaqueLimpieza.html">Servicios para Hogar</a></li>
+                <li><a href="/Principal-Ulloa.html">Servicio de Pulido</a></li>
+                <li><a href="/Asunción_Josué.html">Catalogo de Materiales</a></li>
+                <li><a href="/formulario_hector_rosado.html">Formulario de Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="formulario_registro"> 
+            
+            <h1>Formulario de registro</h1> <br>
+            <h2>Datos de la Persona que solicita el servicios</h2> <br>
+            
+            <div class="contenido">
+            <div class="label"><label for="nombre">Ingrese sus Nombres:</label> </div>
+            <div class="datos"><input type="text" placeholder="Escriba su nombre" name="nombre" id="nombre"></div>
+            </div>
+            
+            <div class="contenido">
+            <div class="label"><label for="apellido">Ingrese sus Apellidos: </label></div>
+            <div class="datos"><input type="text" placeholder="Escriba su apellido" name="apellido" id="apellido"></div>
+            </div>
+
+            <div class="contenido">
+            <div class="label"><label for="ciudad">Escoja su ciudad:</label></div>
+            <div class="datos"> <select name="ciudad" id="ciudad">
+                <option value="0">Seleccionar</option>
+                <option value="1">Esmeralda</option>
+                <option value="2">Manabi</option>
+                <option value="3">Los Rios</option>
+                <option value="4">Machala</option>
+                <option value="5">Latacunga</option>
+                <option value="6">Guayas</option>
+                <option value="7">Pichincha</option>
+                <option value="8">Santa Elena</option>
+            </select> </div>
+            </div>
+
+            <div class="contenido">
+            <div class="label"><label for="contraseña">Ingrese su contraseña:</label> </div>
+            <div class="datos"><input type="password" placeholder="Escriba su contraseña" name="contraseña" id="contraseña">
+            </div>
+            </div>
+
+            <div class="contenido">
+            <div class="label"><label for="correo">Ingrese su E-mail: </label></div>
+            <div class="datos"><input type="email" placeholder="Mr.Darkness@hotmail.com" name="correo" id="correo"></div> 
+            </div> <br>
+            
+            <h2>Datos del Servicio </h2> <br>
+
+            <div class="contenido">
+            <div class="label"><label for="nombre_servicio">Escriba el nombre del Servicio Solicitado:</label></div>
+            <div class="datos"><input type="text" placeholder="Nombre del servicio" name="nombre_servicio" id="nombre_servicio"></div>
+            </div>
+
+            <div class="contenido">
+            <div class="label"><label for="servicio">Escriba el Servicio Solicitado el Tipo:</label></div>
+            <div class="datos"><input type="text" placeholder="Tipo del Servicio" maxlength="60" name="servicio" id="servicio"></div>        
+            </div>
+            
+            <div class="contenido">
+            <div class="label"><label for="fechaNac">Fecha Programada del Servicio:</label></div>
+            <div class="datos"><input type="date" name="fechaNac" id="fechaNac"></div> 
+            </div>
+           
+            
+            <input class="boton" type="submit" value="Registrar">
+        </form>
+    </main>    
+    <script type="text/javascript" src="/js/Registro Rosado.js">
+    </script>
+</body>
+</html>

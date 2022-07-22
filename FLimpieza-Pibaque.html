@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+<html lang="es">
+
+<head>
+  <title>AGENDAR - LIEMPIEZA</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="Keywords" content="HTML5,CSS3,JavaScript">
+  <link rel="stylesheet" href="css/Limpieza.css" />
+  <link rel="icon" href="../../assets/img/medical-icon.ico">
+  
+  <style>
+     .Elemento1 {
+      display: inline-block;
+      padding: 40px;
+
+    }
+
+    .Elemento1:nth-child(1) {
+      width: 55%;
+      padding: 20px;
+    }
+
+    .Elemento1:nth-child(2) {
+      width: 35%;
+      position: relative;
+      bottom: 65px;
+      text-align: left;
+    }
+
+    .Elemento1 img {
+      box-shadow: 1px 1px 1px 1px #000;
+    }
+
+    #Header1 {
+        font-size: 16px;
+        background: #004C70;
+        color: black;
+        font-family: Century Schoolbook;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 150px;
+        border-bottom: 0.20px solid black;
+    }
+
+    #contendor {
+        width: 100%;
+        margin: 0px;
+        min-width: 105px;
+        background: #EBEDEF;
+    }
+
+    .Header2 {
+        display: inline;
+        font-size: 16px;
+        background: white;
+        color: black;
+        font-family: Century Schoolbook;
+        text-align: center;
+        line-height: 80px;
+    }
+
+
+    .elemento {
+        display: inline-block;
+
+
+    }
+
+    .elemento:nth-child(1) {
+        width: 60%;
+        padding: 20px;
+    }
+
+    .elemento:nth-child(2) {
+        width: 30%;
+        position: relative;
+        bottom: 50px;
+        box-shadow: 5px 5px 5px #000;
+    }
+
+    .formularios {
+
+        width: 60%;
+        background: #0F2738;
+        padding: 10px;
+        min-width: 105px;
+        margin: auto;
+        border-radius: 4px;
+        font-family: Century Schoolbook;
+        color: white;
+        box-shadow: 5px 5px 5px #000;
+        text-align: center;
+        line-height: 50px;
+
+    }
+
+    .formItem {
+        background: #24303c;
+        padding: 8px;
+        border-radius: 2px;
+        margin-bottom: 16px;
+        border: 1px solid black;
+        font-family: Century Schoolbook;
+        font-size: 18px;
+        color: white;
+
+    }
+
+
+    .segundo {
+        margin-right: 85px;
+    }
+
+    .tercero {
+
+        margin-left: 27px;
+
+    }
+
+    .gen :nth-child(1),
+    .gen:nth-child(2) {
+        margin-left: 28px;
+
+    }
+
+    .btn {
+        width: 40%;
+        padding: 10px;
+        border: none;
+        margin: 16px 0;
+        font-size: 16px;
+        color: white;
+        background: #34495E;
+        display: inline-block;
+        width: 30%;
+
+
+    }
+
+    #Header1 img {
+        height: 80px;
+        width: 80px;
+        position: relative;
+        right: 5px;
+        top: 25px;
+    }
+</style>
+
+  <script>
+    var imagenes = new Array(
+            ['img/limpiezainicio1.jpg'],
+            ['img/limpiezainicio2.jpg'],
+            ['img/limpiezainicio3.jpg'],
+            ['img/limpiezainicio4.jpg'],
+
+    );
+    var contador = 0;
+
+    function rotarImagenes() {
+      contador++
+      document.getElementById("imagen").src = imagenes[contador % imagenes.length][0];
+    }
+
+    onload = function () {
+      rotarImagenes();
+      setInterval(rotarImagenes, 3000);
+    }
+    function validar() {
+            var resultado = true;
+            var txtNombres = document.getElementById("nombres");
+            var txtApellidos = document.getElementById("apellidos");
+            var txtemail = document.getElementById("correo");
+            var txtTelefono = document.getElementById("telefono");
+            var radiosGenero = document.getElementsByName("genero");
+            var selectPaquete = document.getElementById("Paquete");
+
+            var txtfecha = document.getElementById("fecha");
+
+            var letra = /^[a-z ,.'-]+$/i;
+            var correo = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+            var telefonoreg = /^[0-9]{10}$/g;
+
+            limpiarMensajes();
+
+            //validacion para nombres
+            if (txtNombres.value === '') {
+                resultado = false;
+                mensaje("Nombre es requerido", txtNombres);
+            } else if (!letra.test(txtNombres.value)) {
+                resultado = false;
+                mensaje("Solo debe contener letras", txtNombres);
+            } else if (txtNombres.value.length > 20) {
+                resultado = false;
+                mensaje("Nombre maximo 20 caracteres", txtNombres);
+            }
+            //validacion para Apellidos
+            if (txtApellidos.value === '') {
+                resultado = false;
+                mensaje("Apellido es requerido", txtApellidos);
+            } else if (!letra.test(txtApellidos.value)) {
+                resultado = false;
+                mensaje(" Solo debe contener letras", txtApellidos);
+            } else if (txtApellidos.value.length > 20) {
+                resultado = false;
+                mensaje("Apellido maximo 20 caracteres", txtApellidos);
+            }
+            //validacion telefono
+            if (txtTelefono.value === "") {
+                resultado = false;
+                mensaje("Telefono es requerido", txtTelefono);
+            } else if (!telefonoreg.test(txtTelefono.value)) {
+                resultado = false;
+                mensaje("Telefono debe ser de 10 digitos", txtTelefono);
+            }
+
+            //validacion email
+            if (txtemail.value === "") {
+                resultado = false;
+                mensaje("Email es requerido", txtemail);
+            } else if (!correo.test(txtemail.value)) {
+                resultado = false;
+                mensaje("Email no es correcto", txtemail);
+            }
+
+            //validacion select
+            if (selectPaquete.value === null || selectPaquete.value === '0') {
+                resultado = false;
+                mensaje("Seleccionar su tipo", selectPaquete);
+            }
+
+            //validacion radio button
+            var sel = false;
+            for (let i = 0; i < radiosGenero.length; i++) {
+                if (radiosGenero[i].checked) {
+                    sel = true;
+                    break;
+                }
+            }
+            if (!sel) {
+                resultado = false;
+                mensaje("Debe seleccionar su genero", radiosGenero[0]);
+            }
+
+            // validacion de fecha
+            var txtFecha = document.getElementById("fecha");
+            var dato = txtfecha.value;
+            var fechaN = new Date(dato);
+            var anioN = fechaN.getFullYear();
+
+            var fechaActual = new Date();
+            var anioA = fechaActual.getFullYear();
+            if (txtFecha.value === "") {
+                resultado = false;
+                mensaje("Ingrese una fecha", txtFecha);
+            }
+            if (fechaN > fechaActual) {
+                resultado = false;
+                mensaje("Fecha superior a la actual", txtfecha);
+            } else if (anioN < 1980) {
+                resultado = false;  
+                mensaje("Año de nacimiento no puede ser menor a 1980", txtfecha);
+            } else if ((anioA - anioN) < 18) {
+                resultado = false;
+                mensaje(" Mayor de 18 años para Registrarse", txtfecha);
+            }
+
+            if (!resultado) {
+                event.preventDefault();
+            }
+
+        }
+
+        function mensaje(cadenaMensaje, elemento) {
+            elemento.focus();
+            var nodoPadre = elemento.parentNode;
+            var nodoMensaje = document.createElement("span");
+            nodoMensaje.innerHTML = cadenaMensaje;
+            nodoMensaje.style.color = "red";
+            nodoMensaje.display = "block";
+            nodoMensaje.setAttribute("class", "mensaje");
+
+            nodoPadre.appendChild(nodoMensaje);
+
+        }
+
+        function limpiarMensajes() {
+            var mensajes = document.querySelectorAll(".mensaje");
+            for (let i = 0; i < mensajes.length; i++) {
+                mensajes[i].remove();
+            }
+
+        }
+
+
+  </script>
+
+<body>
+  <div id="contendor">
+
+    <header class = "Encabezado">
+      <h1 class="Contenido"> <img src="img/logo.jpeg" alt="" />SERVICIO DE LIMPIEZA</h1>
+      <nav class = "Contenido"> 
+        <ul class = "menu">
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/Quimi_Oficina.html">Servicios para Oficina</a></li>
+          <li><a href="/PibaqueLimpieza.html">Servicio y mantenimiento</a></li>
+      </ul>
+        
+      </nav>
+    </header>
+    <br>
+    <header class="Header2">
+      <h2><strong>FORMULARIO DE REGISTRO PARA EL SERVICIO</strong></h2>
+  </header>
+
+    
+  <div id="contenedorContenido">
+
+      <div class="Elemento1">
+        <div class="formularios">
+
+            <form id="formContacto" onsubmit="return validar()">
+
+
+                <div class="row">
+                    <h2 class="text-center">REGISTRATE</h2>
+
+                    <div class="col-md-12">
+
+                        <input type="text" name="nombres" id="nombres" class="formItem" placeholder="Nombres" />
+                    </div>
+
+
+                    <div class="col-md-12">
+
+                        <input type="text" name="apellidos" id="apellidos" class="formItem"
+                            placeholder="Apellidos" />
+                    </div>
+
+
+                    <div class="col-md-12">
+
+                        <input type="email" name="correo" id="correo" class="formItem" placeholder="email" />
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <input type="text" name="telefono" id="telefono" class="formItem"
+                            placeholder="Telefono" />
+                    </div>
+
+
+
+                    <div class="col-md-12">
+                        <label >Género:</label>
+
+                        <input class="gen" id="fem" type="radio" name="genero" value="F" />Femenino
+                        <input class="gen" id="mas" type="radio" name="genero" value="M" />Masculino<br>
+                    </div>
+
+
+
+                    <div class="col-md-12">
+                        <label for="Paquete" class="tercero"> Paquete de Servicio :<br></label>
+                        <select name="Paquete" id="Paquete" class="formItem">
+                            <option value="0">Seleccione..</option>
+                            <option value="1">Basico</option>
+                            <option value="2">Estandar</option>
+                            <option value="3">Premiun</option>
+                           
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="col-md-12">
+                        <label>Fecha de Nacimiento:<br></label>
+                        <input type="date" name="fecha" id="fecha" class="formItem" />
+                    </div>
+
+                    <!--Botones-->
+                    <div class="col-md-12 text-center">
+                        <input type="submit" class="btn btn-primary" value="Enviar">
+                        <input type="reset" class="btn btn-primary" value="Cancelar">
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+      <div class="Elemento1">
+        <img src="img/limpiezainicio1.jpg" alt="" id="imagen" height="420" width="440">
+
+      </div>
+    </div>
+
+
+
+
+    <footer id="Footer1">
+      <strong>Autor:</strong> Grupo 4.
+      <br>
+      <strong>Visitanos:</strong> Guayaquil-Ecuador.
+      <br>
+      <br>
+      <strong>Empresa de Servicios de Limpieza</strong>
+      <br>
+      <br>
+
+  
+
+          <div>
+              <h4 id="acercaDe"><strong>Contactanos a nuestras Redes sociales</strong></h4>
+          </div>
+          <br>
+          <a href="https://www.facebook.com/" target="_BLANK"> <img src="../../assets/img/facebook.png" alt="descripcion"
+              height="50" width="50" /></a>
+              <a href="https://www.instagram.com/accounts/login/" target="_BLANK"> <img src="../../assets/img/instagram.png"
+                  alt="descripcion" height="50" width="50" /></a>
+          <a href="https://twitter.com/?lang=es" target="_BLANK"> <img src="../../assets/img/twitter.png" alt="descripcion"
+                  height="50" width="50" /></a>
+          <br>
+
+          <h4> Derechos reservados &copy; 2022-2023</h4>
+    
+
+  </footer>
+  </div>
+</body>
+
+</html>

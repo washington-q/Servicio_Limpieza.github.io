@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>LIMPIEZA Y MANTENIMIENTO</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejemplo de HTML5">
+    <meta name="Keywords" content="HTML5,CSS3,JavaScript">
+    <link rel="stylesheet" href="css/Limpieza.css" />
+    
+
+    <script>
+        var imagenes = new Array(
+            ['img/limpiezainicio1.jpg'],
+            ['img/limpiezainicio2.jpg'],
+            ['img/limpiezainicio3.jpg'],
+            ['img/limpiezainicio4.jpg'],
+        );
+        var contador = 0;
+
+        function rotarImagenes() {
+            contador++
+            document.getElementById("imagen").src = imagenes[contador % imagenes.length][0];
+        }
+
+        onload = function () {
+            rotarImagenes();
+            setInterval(rotarImagenes, 3000);
+        }
+
+        function cambiarPestania(enlaceSeleccionado) {
+            var enlaces = document.querySelectorAll("#titulos a");
+            for (let i = 0; i < enlaces.length; i++) {
+                enlaces[i].style.border = '';
+            }
+
+            var pe = document.getElementById("parrafo");
+            var dive = document.getElementById("imagen1");
+
+            var id = enlaceSeleccionado.getAttribute("id");
+            enlaceSeleccionado.style.border = "1px solid black";
+            enlaceSeleccionado.style.color = "white";
+
+            let imge = document.getElementById('imagen1');
+            let parrafo = document.getElementById('parrafo');
+
+            switch (id) {
+                case "uno":
+
+                    parrafo = "Se utiliza para la limpieza de conducciones, cañerías, tanques y sistemas de filtración que no se pueden desarmar. Su principal ventaja es que la limpieza se realiza sin necesidad de desarmar la pieza o sistema. Para una limpieza efectiva el agente limpiador debe circular lentamente a través de las piezas, al menos durante una hora y media, aunque este proceso puede tomar varias horas en caso de sistemas de grandes dimensiones.";
+                    imge.src = "img/limpieza1.jpg";
+                    break;
+                case "dos":
+
+                    parrafo = "Es el método de limpieza más versátil, particularmente se utiliza para la limpieza de piezas con formas irregulares, configuraciones cilíndricas y tubulares o cajas que no se puedan limpiar adecuadamente utilizando sistemas de aspersión. Las formas de aplicación de éste método pueden variar desde la inmersión manual de una pieza, agitación de una cesta conteniendo varias piezas en una cuba de inmersión a temperatura ambiente";
+                    imge.src = "img/limpieza2.jpg";
+                    break;
+                case "tres":
+               
+                    parrafo = "El detergente se pulveriza sobre la superficie del local o del equipo a limpiar, a veces difíciles de acceder, en forma de espuma. La espuma debe adherirse a las paredes durante el tiempo necesario que le permita atacar a la suciedad, no debe secarse y su eliminación se realizará con un simple enjuagado. El tiempo de aplicación es del orden de 20 minutos.";
+                    imge.src = "img/limpieza3.jpg";
+                    break;
+
+                case "cuatro":
+              
+                    parrafo = "Este tipo de limpieza, ya sea con aspersores móviles o fijos, se utiliza para la limpieza de cisternas, recipientes o envases, y superficies como los suelos, pudiendo variar la presión. Los tiempos de contacto son muy cortos pero esto se compensa por el efecto mecánico debido a la presión y a la presencia de agentes tensioactivos muy mojantes y poco espumantes.";
+                    imge.src = "img/limpieza4.jpg";
+                    break;
+
+                case "cinco":
+
+                    parrafo = "Se utiliza para la limpieza de conducciones, cañerías, tanques y sistemas de filtración que no se pueden desarmar. Su principal ventaja es que la limpieza se realiza sin necesidad de desarmar la pieza o sistema. Para una limpieza efectiva el agente limpiador debe circular lentamente a través de las piezas, al menos durante una hora y media, aunque este proceso puede tomar varias horas en caso de sistemas de grandes dimensiones.";
+                    imge.src = "img/limpieza5.jpg";
+                    break;
+            }
+            pe.innerHTML = parrafo;
+            dive.innerHTML = imge;
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div id="contendor">
+
+        <header class = "Encabezado">
+            <h1 class="Contenido"> <img src="img/logo2.png" alt="" />SERVICIO DE LIMPIEZA</h1>
+            <nav class = "Contenido">  
+              <ul class = "menu">
+                <li><a href="/RosadoHector.html">Inicio</a></li>
+                <li><a href="/QuimiWashington.html">Servicios para Oficina</a></li>
+                <li><a href="/Asunción_Josué.html">Catalogos de Productos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="Sprincipal">
+            <h2 class="mensaje"><strong>LIMPIEZA Y MANTENIMIENTO</strong></h2>
+            <img class="imagenPrincipal" src="img/logo1.png" title="LIMPIEZA">
+            <h3 class="mensaje"><strong>CONOCE MAS SOBRE NUESTRO SERVICIOS CON SOLO</strong><br><br><a
+                    href="FLimpieza-Pibaque.html">REGISTRARTE</a></h3>
+
+        </div>
+
+        <div id="Contenedor-Pa-Vi">
+            <div class="artic1">
+
+                <h4><strong>¿Por qué usar nuestros Servicio ?</strong></h4>
+                <br>
+
+                <p>La limpieza es un factor clave a la hora de hacer negocios, ya sea como imagen para los clientes 
+                    y proveedores o para mejorar la productividad de la empresa que brinda a sus trabajadores un mejor ambiente. </p>
+                <p>Las condiciones de higiene de las instalaciones tienen especial relevancia, por lo que no puede estar en manos inexpertas. 
+                    Las empresas concentran a grupos de personas que transitan por áreas comunes en donde se comparten equipamientos 
+                    y es necesario mantener una correcta limpieza que asegure la salubridad del ambiente laboral.</p>
+                <p>Las bacterias o gérmenes que se quedan en las superficies se deben exterminar lo más rápido posible 
+                    para evitar su propagación y que no pongan en riesgo al personal.</p>
+                <p>Por ello es tan importante la ayuda profesional de limpieza de empresas, que son especialistas en técnicas para 
+                    limpiar y en el manejo de productos que, en muchos casos, requieren formación específica.</p>
+                <p>Imagínate algo tan sencillo como una persona que realiza la labor de limpieza de manera empírica, pasa por la superficie 
+                    de tu escritorio el mismo trapo que utilizó para limpiar la superficie del lavamanos del baño ¿Asqueroso verdad?, o que 
+                    la misma persona inexperta utilice un limpiador ácido para baldosas desconociendo su modo de uso, tiempo de acción, enjuague 
+                    y correcta ventilación. </p>
+            </div>
+
+            <div class="artic1">
+                <img src="img/.jpg" alt="" id="imagen" height="260" width="440" />
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+
+
+        <div id="titulos">
+            <a class="tit" id="uno" onmouseover="cambiarPestania(this)" href="#titulos">Limpieza Manual</a>
+            <a class="tit" id="dos" onmouseover="cambiarPestania(this)" href="#titulos">Limpieza por inmersion o remojo</a>
+            <a class="tit" id="tres" onmouseover="cambiarPestania(this)" href="#titulos">Limpieza con espuma</a>
+            <a class="tit" id="cuatro" onmouseover="cambiarPestania(this)" href="#titulos">Limpieza por aspersión</a>
+            <a class="tit" id="cinco" onmouseover="cambiarPestania(this)" href="#titulos">Limpieza IN SITU</a>
+        </div>
+        <div id="contenido">
+            <p id="parrafo"> A continuación detallamos los tipos más comunes de limpieza industrial.</p><br>
+            <img id="imagen1" src="img/limpiezageneral.jpg" alt="">
+        </div>
+
+        <hr>
+
+        <div class="artic2">
+            <article id="at1">
+                <h3><strong>Todo lo que necesitas saber para una buena lipieza</strong></h3>
+                <br>
+            
+            </article>
+        </div>
+
+
+        <aside id="Aside1">
+            <div class="artic3">
+                <blockquote>
+                    <h5> Importancia de la limpieza y mantenimiento</h5>
+                    <iframe src="https://www.youtube.com/embed/Wyn9DZoxO7s" height="350" width="450"
+                        allowfullscreen></iframe>
+                </blockquote>
+            </div>
+
+            <div class="artic3">
+
+                <blockquote>
+                    <h5>Tutorial para una buena limpieza y mantenimiento</h5>
+                    <iframe src="https://www.youtube.com/embed/I254BvgEhTI" height="350" width="430"
+                        allowfullscreen></iframe>
+                </blockquote>
+            </div>
+        </aside>
+
+
+        <footer id="Footer1">
+            <strong>Autor:</strong> Grupo 4.
+            <br>
+            <strong>Visitanos:</strong> Guayaquil-Ecuador.
+            <br>
+            <br>
+            <strong>Empresa de Servicios de Limpieza</strong>
+            <br>
+            <br>
+    
+        
+    
+                <div>
+                    <h4 id="acercaDe"><strong>Contactanos a nuestras Redes sociales</strong></h4>
+                </div>
+                <br>
+                <a href="https://www.facebook.com/" target="_BLANK"> <img src="img/facebook.png" alt="descripcion"
+                    height="50" width="50" /></a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_BLANK"> <img src="img/instagram.png"
+                        alt="descripcion" height="50" width="50" /></a>
+                <a href="https://twitter.com/?lang=es" target="_BLANK"> <img src="img/twitter.png" alt="descripcion"
+                        height="50" width="50" /></a>
+                <br>
+    
+                <h4> Derechos reservados &copy; 2022-2023</h4>
+          
+    
+        </footer>
+    </div>
+</body>
+
+</html>

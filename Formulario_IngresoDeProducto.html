@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tienda de Servicio de Limpieza">
+    <meta name="keywords" content="Producto de limpieza">
+    <meta name="viewport" content="width=device-width" />
+    <title>Tiendas online de Servicio de Limpieza</title>
+   
+    <link href="css/styles1.css" rel="stylesheet">
+    <style>
+        .formulario_login {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+        }
+
+        .contenedor_formulario {
+            display: block;
+            width: 100%;
+            margin: 10px;
+        }
+
+        #boton_login {
+            border: 1px solid rgba(129, 129, 129, .2);
+            border-radius: 15px;
+            height: 40px;
+            background-color: rgba(0, 255, 255, 0.6);
+            color: #4C4C4C;
+            font-size: 20px;
+        }
+
+        .contenedor_formulario[type=text] {
+            color: red;
+            background-color: rgba(0, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <div id="principalheader" class="container">
+            
+                                <a href="" class="nav-link active">Principal</a>
+                                <a href="Asunción_Josué.html" class="nav-link ">Productos</a>
+                                <a href="" class="nav-link">Ofertas</a>
+                                <a href="" class="nav-link">Contactanos</a>
+                                <a href="" class="nav-link">Iniciar Sesión</a>                       
+                 </nav>
+                </div>
+                
+    </header>
+    <main>
+
+        <fieldset class="form-group border p-1 formulario_login">
+            <h2 style="font-size: 1.2rem; text-align: center; color: green;">AGREGAR PRODUCTOS AL SISTEMA</h2>
+            <form>
+                <div style="width: 60%; margin: 0 auto;">
+                    <div class="FormularioIngresoProducto">
+                        
+                        <label class="contenedor_formulario">Nombre:</label>
+                        <input id="Nombre" class="contenedor_formulario" type="text"
+                            placeholder="Ingresar el nombre del producto">
+                    </div>
+                    <div class="FormularioIngresoProducto">
+                        <label class="contenedor_formulario">Descripción:</label>
+                        <textarea id="Descripcion" class="contenedor_formulario" rows="3"
+                            style="resize: none;"></textarea>
+                    </div>
+                    <div class="FormularioIngresoProducto">
+                        <label class="contenedor_formulario">Precio:</label>
+                        <input id="Precio" class="contenedor_formulario" type="text"
+                            placeholder="Ingresar el precio del producto">
+                    </div>
+                    <div class="FormularioIngresoProducto">
+                        <label class="contenedor_formulario">Categoria:</label>
+                        <select id="Categoria" class="contenedor_formulario" name="transporte">
+                            <option>Seleccionar..</option>
+                            <option>Detergentes</option>
+                            <option>Jabones</option>
+                            <option>Suavizantes para ropa</option>
+                            <option>Desinfectantes</option>
+                        </select>
+                    </div>
+                    <div class="FormularioIngresoProducto">
+                        <label class="contenedor_formulario">Cantidad disponible:</label>
+                        <input id="Cantidad" class="contenedor_formulario" type="text"
+                            placeholder="Ingresar la cantidad">
+                    </div>
+                    <div class="FormularioIngresoProducto">
+                        <p class="contenedor_formulario">Imagen del Producto</p>
+                        <input id="img_formulario" class="contenedor_formulario" type="file" name="imagensubida">
+                    </div>
+                    <button id="boton_login" type="button" class="contenedor_formulario">Aceptar</button>
+                </div>
+            </form>
+
+        </fieldset>
+       
+    </main>
+    <script src="js/Formulari.js"></script>
+    
+</body>
+
+</html>
