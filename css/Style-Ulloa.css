@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(213, 252, 255);
+}
+#esUnDiv{
+    font-size: 20px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+}
+#SegundoEnlace{
+    font-size: 15pt;
+    padding: 5pt;
+    background-color:aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+}
+#PrimerEnlace{
+    font-size: 15pt;
+    padding: 5pt;
+    background-color:aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+}
+#enlace3{
+    display: inline-block;
+    font-size: 15pt;
+    padding: 5pt;
+    background-color:aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*selector de clases*/
+.menu{
+    font-size: 10pt;
+    background-color:aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+/*selector agrupado o por grupos
+*/
+
+h1,h2,h3{
+    color:crimson;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*selector pseudoclases*/
+a:hover{
+    color: rgb(41, 31, 182);
+}
+/*selector de elementos*/
+p{
+text-align: center ;
+
+}
+nav h1{
+    text-align: center;
+}
+header h1{
+    text-align: center;
+}
+body h1{
+text-align: center;
+}
+section article p{
+    text-align: left;
+    text-align: justify;
+}
+aside{
+    text-align: left;
+    display: inline-block;
+    min-height: 400px;
+    width: 35%;
+    min-width: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+
+}
+main{
+    width: 60%;
+    background-color: #ffffff;
+    float: left;
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    margin: 80px;
+    border-color: black;
+    border-radius: 20px;
+    background: #f5f5f5;
+    padding: 10px;
+}
+.Muestras{
+    display: inline-block;
+    text-align: left;
+    padding: auto;
+}
+
+.header-logo img{
+    margin-left: 30px;
+    width: 40%;
+    height: 130px;
+    align-items: center;
+  
+}

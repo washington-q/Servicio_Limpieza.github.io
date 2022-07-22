@@ -1,0 +1,256 @@
+
+/**********Seccion footer y header ***************/
+*{   
+    margin:0px;
+    padding: 0px;
+    font-family: Century Schoolbook; 
+  }
+  
+  a{
+  text-decoration: none;
+  }
+  
+  /* ------------------------------- ENCABEZADO ----------------------------------*/
+  .Encabezado{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    background: #08ffff;
+    color: white;
+  }
+  .Encabezado img{
+      width: 6%;
+      margin-right: 1%;
+  }
+  .Contenido:nth-child(1){
+    /*Centrar contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*--------------------*/
+    padding: 2.7%;
+    font-size: 100%;
+  }
+  .Contenido:nth-child(2){
+    display: flex;
+    width: 100%; 
+    font-size: 12px;
+    text-align: left;
+    border-bottom: solid 3px #004C70;
+    background: #0b080e;
+  
+  }
+  .menu li a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display: block;
+  font-size: initial;
+  }
+  .menu li{
+  display: inline-block;
+  text-align: center;
+  }
+  
+  /* -------------------------------------- ------------------------------------*/
+   
+   #Foot {
+     background: #0F2738;
+     text-align: center;
+     padding-bottom: 1%;
+     padding-top: 1%;
+    }
+    
+    #Footer1{
+         text-align: center;
+         background: #0b080e;
+         color: white;
+         font-family: Century Schoolbook; 
+         border-bottom: 30px solid #0b080e;
+         padding-top: 1%;
+           
+    }
+     
+
+
+.artic1 h4{
+    font-size: 18px;
+    color: black;
+    font-family: Century Schoolbook;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0px;
+    padding: 0px;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+    font-family: Century Schoolbook;
+    text-align: left;
+    text-align: justify;
+    padding: 5px;
+}
+
+
+/**********Seccion cabezea***************/
+li:nth-child(3){
+    background: #54595F;
+    border-top: solid 3px #0b080e;
+  }
+
+.Sprincipal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 9%;
+    background: #54595F;
+    ;
+    color: white;
+    text-align: center;
+    
+    bottom: 25px;
+}
+
+.Sprincipal .imagenPrincipal {
+    width: 10%;
+    padding: 2%;
+
+}
+
+.Sprincipal .mensaje {
+    width: 25%;
+}
+
+.Sprincipal h2 {
+    font-size: 26px;
+}
+
+
+.Sprincipal h3 {
+    font-size: 20px;
+}
+
+
+.Sprincipal a {
+    padding: 3%;
+    font-weight: bolder;
+    background: white;
+    color:#54595F;
+    border-radius: 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/****************************************/
+
+
+
+#contendor {
+    width: 100%;
+    margin: 0px;
+    background: white;
+}
+
+.artic1 {
+    min-height: 5px;
+    min-width: 105px;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    width: 60%;
+}
+
+.artic1:nth-child(2) {
+    width: 30%;
+    text-align: center;
+}
+
+.artic1:nth-child(2) img {
+    box-shadow: 1px 1px 1px 1px #000;
+    position: relative;
+    bottom: 26px;
+}
+
+.artic2 {
+    display: inline;
+    min-height: 10px;
+    min-width: 105px;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    color: black;
+    font-family: Century Schoolbook;
+    text-align: center;
+}
+
+.artic2 p {
+    text-align: center;
+}
+
+.artic3 {
+    display: inline-block;
+    font-size: 16px;
+    min-width: 105px;
+    color: black;
+    font-family: Century Schoolbook;
+    text-align: center;
+
+}
+
+.artic3:nth-child(2) {
+    width: 40%;
+    text-align: center;
+    position: relative;
+    left: 60px;
+}
+
+#Aside1 {
+    text-align: center;
+    min-width: 105px;
+}
+
+#H1 img {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    right: 5px;
+    top: 25px;
+}
+
+.tit {
+    padding: 10px;
+    background: #54595F;
+    color: white;
+    text-decoration: none;
+
+}
+
+.tit:hover {
+    background: grey;
+}
+
+#contenido {
+    border: 1px solid #cccccc;
+    margin-top: 9px;
+    padding: 10px;
+    text-align: center;
+}
+
+#contenido img {
+    height: 260px;
+    width: 380px;
+    box-shadow: 1px 1px 1px 1px #000;
+
+}
+
+#contenido #parrafo {
+    text-align: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+#titulos {
+    text-align: center;
+}

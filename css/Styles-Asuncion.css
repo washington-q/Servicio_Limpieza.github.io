@@ -1,0 +1,236 @@
+body {
+    margin: 0px;
+    position: relative;
+}
+/*cabezera*/
+header {
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,14,20,.8));
+    background-position: center center;
+    background-size: cover;
+    height: 225px;
+   
+}
+#boton_login {
+    float: right;
+    color: blue;
+}
+h1 {
+    color: aqua; 
+    text-align: center;
+    padding: 25px;
+}
+.Cabezera {
+    float:right;
+    position: relative;
+    top:63px;
+    right: 50px;
+   
+}
+.menu li{
+    display: inline-block;  
+}
+.menu li a {
+    text-decoration: none;
+    list-style:circle;
+    color: aliceblue;
+    padding: 15px;
+}
+#imagen_logo {
+    height: auto;
+    width: 180px;
+    position:relative;
+    top: 30px;
+    left: 50px;
+}
+/*cabezera*/
+#CuerpoDelaPaginaWeb {
+    background-color: #fff;
+    position: relative;
+    
+}
+Section {
+    background-color:#fff; 
+    width: 75%;
+    top: 60px;
+    padding: 5px;
+    padding-bottom: 50px;
+    position: relative;
+    left: 25%;
+    
+}
+.SeccionesDelArticulo article{
+    width: 30%;
+    padding: 10px;
+    display:inline-table;
+    position: relative;
+    left: 10px;
+    background: linear-gradient(rgba(55,255,255,.5),rgba(4, 3, 34, 0.077));
+    border: 1px solid rgba(129,129,129,.2);
+    margin-bottom: 10px;
+}
+.SeccionesDelArticulo article img {
+    width:  100px; 
+    height: 100px;
+    position: relative;
+    left: 30%;
+}
+.productos_muestra h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    color: #333;
+}
+#DisenoMenuLateral {
+    background-color: #fff;
+    position: absolute;
+    top: 290px;
+    left: 50px;
+    width: 20%;
+}
+#DisenoMenuLateral nav ul{
+    flex-wrap: wrap;
+    display:contents;
+    align-items: stretch;
+    background-color: #fff;
+    
+}
+#DisenoMenuLateral nav ul li{
+    list-style: none;
+    padding: 30px;
+    border: 1px solid rgba(129,129,129,.2);
+}
+#DisenoMenuLateral nav ul li a{
+    text-decoration: none;
+}
+.categoria_menuLateral {
+    padding: 25px;
+    text-align: center;
+    color: #000;
+    background-color: #F1F1F1;
+    margin: 0;
+}
+
+
+.container{
+    width: 70%;
+    height: 85vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fb {
+    position: relative;
+    margin-bottom: 20px;
+    width: 225px;
+    height: 50px;
+    background: blue;
+    color: white;
+}
+
+.go{
+    position: relative;
+    margin-bottom: 20px;
+    width: 225px;
+    height: 50px; 
+    background: white;
+    color: black;
+}
+
+.tw{
+    position: relative;
+    margin-bottom: 20px;
+    width: 225px;
+    height: 50px; 
+    background: lightblue;
+    color: black;
+}
+
+.login-items{
+    position: relative;
+}
+
+.Contenedor h2{
+    text-align: center;
+}
+
+.mision p{
+    text-align: left;
+}
+
+.mision h3{
+    color: black;
+}
+
+
+footer {
+    background-color: rgba(0,255,255,.4);
+    background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,14,20,.6));
+    background-position: center center;
+    background-size: cover;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    position:relative;
+    top: 50px;
+}
+   
+p {  
+    margin: 5px;
+    color: rgb(0, 0, 0);
+}
+h4 {
+    margin: 8px;
+    color: rgba(0,255,0,.7);
+}
+.CentrarTexto , .parafosfooter {
+     text-align: center;
+}
+#DisenodeSucursal p{
+    color:rgba(0,255,255,.8);
+    margin: 7px;
+}
+.disenofooter {
+    margin: 10px;
+}
+#addresRedesSociales {
+    width: 400px;
+}
+#politicas  , #ayuda {
+    width: 175px;
+    
+}
+#politicas a , #ayuda a {
+    width: 175px;
+    color: rgba(0,255,255,.8);
+    text-decoration:none;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+#menu_de_redes_sociales {
+    position:relative;
+    float: left;
+}
+#menu_de_redes_sociales li {
+    list-style:none;
+    display: inline-block;
+    float: left; 
+    margin-bottom: 10px;  
+}
+#menu_de_redes_sociales li a{
+    text-decoration:none;
+    padding: 30px;
+    
+}
+.parafosfooter {
+    padding-left: 3px;
+    margin-top: 0px;
+    color: rgba(0,255,0,.8);
+}
+.imagenQrWhatsapp {
+    position: relative;
+    left: 50px;
+}
+
+

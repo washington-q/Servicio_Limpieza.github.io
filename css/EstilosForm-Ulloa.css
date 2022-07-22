@@ -1,0 +1,68 @@
+body{
+    background-color: azure;
+
+}
+.nav-main{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    background-color: rgb(188, 248, 248);
+}
+.nav-brand{
+    width: 120px;
+}
+
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul li a{
+    padding: 6px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+
+}
+body{
+    font-size: 12px;
+    font-family: verdana;
+}
+
+#contenedorPrincipal{
+    background: #c5dcdd;
+    width: 80%;
+    margin: 0 auto; /*para centrar un contenedor*/
+    
+}
+
+#encabezado{
+    text-align: center;
+    background: #36afff
+}
+
+header h1{
+    font-size: 40px;
+    color:#000000;
+    display: inline;  
+}
+
+.text-center{
+    text-align: center;
+}
+#contenedorContenido{
+    color:#333333;
+;
+}

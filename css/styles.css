@@ -1,0 +1,21 @@
+main{
+    box-sizing: border-box;
+}
+
+#Tema{
+    padding: 10px;
+    margin: auto;
+    background: linear-gradient(#2dd5f3, #ffffff);
+    text-align: center;
+}
+
+#ContenedorPrincipal{
+    display: flex;
+}
+
+#Container{
+    background: #4ee4ff;
+    height: auto;
+    margin: 50px;
+    border-radius: 3px;
+}

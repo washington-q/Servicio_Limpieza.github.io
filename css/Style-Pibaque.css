@@ -1,0 +1,43 @@
+#Foot {
+    background: #111111;
+    text-align: center;
+   }
+   
+   #Footer1{
+        text-align: center;
+        background: #111111;
+        color: white;
+        font-family: Century Schoolbook; 
+        border-top: 0.20px solid black;
+        padding: 10px;
+   
+   }
+   
+   #menucabecera{
+       width: 100%; 
+       background: #111111;
+   }
+   .menu{
+       
+         max-width: 1000px;
+         color: black;
+   
+   }
+   
+   .menu li a{
+       text-decoration: none;
+       color: white;
+       padding: 20px;
+       display: block;
+   }
+   
+   
+   .menu li{
+       display: inline-block;
+       text-align: center;
+   }
+   
+   *{   
+            margin:0px;
+            padding: 0px;
+   }
